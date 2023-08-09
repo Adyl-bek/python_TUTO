@@ -35,6 +35,7 @@ class Question():
     
 
 
+
         
 question_1 = Question("1.", "How many months of the year has 28 days?", "1", "1) 12\n2) 1\n3) 11\n4) None")
 question_2 = Question("2.", "57+23=0\n10+12=1\n85+69=4\n78+89=?", "3", "1) 0\n2) 167\n3) 5\n4) 3")
