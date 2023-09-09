@@ -1,4 +1,24 @@
 """I wanna make a new one"""
+
+import csv
+import os
+
+with open("quiz_data.csv", 'r') as file:
+  csvreader = csv.reader(file, delimiter='|')
+  for row in csvreader:
+    a = int(row[0])
+  id = a + 1
+
+check_file = os.stat("quiz_data.csv").st_size
+
+if(check_file == 0):
+    csv.register_dialect('myDialect',
+                        delimiter='|',
+                        quoting=csv.QUOTE_ALL)
+    with open('quiz_data.csv', 'a', newline="") as file:
+        writer = csv.writer(file, dialect='myDialect')
+        writer.writerow([id, "Text_of_question", "A", "B", "C", "D", "correct_answer"])
+
 class Question:
     def __init__(self, question_text, answers, correct_answer):
         self.question_text = question_text
@@ -12,6 +32,9 @@ class Quiz:
 
     def add_question(self, question):
         self.questions.append(question)
+        with open('innovators.csv', 'w') as file:
+            writer = csv.writer(file)
+            writer.writerow([id, question.question_text, "A", "B", "C", "D", "correct_answer"])
 
     def conduct_quiz(self):
         score = 0
@@ -51,7 +74,7 @@ class Teacher:
             print("Wrong Account_No, try again")
             quit()
 
-teacher = Teacher("TEACHER228", "1234")
+teacher = Teacher("g", "1234")
 
 quiz = Quiz(teacher)
 
