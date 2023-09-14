@@ -29,7 +29,7 @@
 # print(a + b)
 
 
-from math import *
+from math import pow
 
 a = float(input("Enter first number: "))
 b = float(input("Enter second number: "))
