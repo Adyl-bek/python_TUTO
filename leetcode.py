@@ -209,3 +209,72 @@
 #     profit = max - min
 #     print(profit)
 
+# prices = [6,1,3,2,4,7]
+# profit = 0
+# for i in range(len(prices) - 1):
+#     current = prices[i + 1] - prices[i]
+#     if prices[i] < prices[i + 1]:
+#         profit += current
+# print(profit)
+# buy_day = 0
+# sell_day = 1
+# profit = 0
+# profit_2 = 0
+# while sell_day < len(prices):
+#     current = prices[sell_day] - prices[buy_day] 
+    # if prices[buy_day] < prices[sell_day]:
+    #     profit = max(current, profit)
+#         current_2 = prices[sell_day] - prices[profit - 1]
+#     if prices[buy_day] < prices[sell_day]:
+#         profit_2 = max(current_2, profit_2)
+#         # else:
+#         #     buy_day = sell_day
+#         # sell_day += 1
+#     else:
+#         buy_day = sell_day
+#     sell_day += 1
+# print(profit + profit_2)
+
+nums = [2,1,1,0,0]
+if(len(nums) == 1):
+    print('true')
+elif(len(nums) == 2 and nums[1] == 0):
+    print('true')
+elif(len(nums) == 2 and nums[1] < 2):
+    print('false')
+elif(len(nums) - 1 <= nums[1] + 1 and nums[0] != 0):
+    print('true')
+else:
+    for i in range(nums[1] + 1, len(nums) - 1):
+        if(len(nums) - 1 - (nums[1] + 1) <= i+nums[i] and nums[i] != 0 and nums[len(nums) - 1] != 0):
+            print('true')
+            break
+        if(nums[len(nums) - 1 - nums[1]] == 0 and nums[i] != 0):
+            print('false')
+            break
+        elif(nums[i] == 0 and nums[1] != 0):
+            print('false')
+            break
+        elif(len(nums) != 2 and nums[i] != 0 and nums[1] == 0):
+            print('false')
+        elif(len(nums) != 2 and nums[1] == 0 and nums[i] == 0):
+            print('true')
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
