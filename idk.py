@@ -27,3 +27,5 @@
 
 # # Print the list of characters
 # print(chars)
+position = input()
+print(position[0])

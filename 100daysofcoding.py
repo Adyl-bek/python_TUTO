@@ -89,3 +89,66 @@
 # else:
 #   print('You fell into a hole. Game Over.')
 #   quit
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+
+import random
+
+random_number = random.randint(1,3)
+
+choice = int(input('Choose 1 for Rock, 2 for Paper, 3 for Scissors\n'))
+
+if(choice == 1):
+  print("Your choise")
+  print(rock)
+elif(choice == 2):
+  print("Your choise")
+  print(paper)
+elif(choice == 3):
+  print("Your choise")
+  print(scissors)
+else:
+  print('Invalid choice')
+if(random_number == 1):
+  print("Computer's choise")
+  print(rock)
+elif(random_number == 2):
+  print("Computer's choise")
+  print(paper)
+elif(random_number == 3):
+  print("Computer's choise")
+  print(scissors)
+else:
+  print('Invalid choice')
+if(choice == 1 and random_number == 1 or choice == 2 and random_number == 2 or choice == 3 and random_number == 3):
+  print('Draw')
+elif(choice == 1 and random_number == 2 or choice == 2 and random_number == 3 or choice == 3 and random_number == 1):
+  print('You lost')
+elif(choice == 1 and random_number == 3 or choice == 2 and random_number == 1 or choice == 3 and random_number == 2):
+  print('You won')
