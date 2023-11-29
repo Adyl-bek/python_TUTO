@@ -26,9 +26,9 @@ def read_scores(file_name):
 def write_scores(file_name, min_score, max_score, avg_score):
     try:
         with open(file_name, 'a') as file:
-            file.write(f"Min \n{min_score}\n")
-            file.write(f"Max \n{max_score}\n")
-            file.write(f"Average \n{avg_score}\n")
+            file.write(f"Minimum score: {min_score}\n")
+            file.write(f"Maximum score: {max_score}\n")
+            file.write(f"Average score: {avg_score}\n")
     except FileNotFoundError:
         print(f"File {file_name} not found.")
 

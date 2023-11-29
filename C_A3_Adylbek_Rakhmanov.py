@@ -94,3 +94,98 @@
 # data = date.split('/')
 # print(f"{month[data[0]]} {data[1]}, {data[2]}")
     
+#Coding Assignment 4
+"""
+
+"""
+# class Employee:
+#     def __init__(self, name, number):
+#         self.name = name
+#         self.number = number
+
+#     def get_name(self):
+#         return self.name
+#     def set_name(self, name_1):
+#         self.name = name_1 
+
+#     def get_number(self):
+#         return self.number
+#     def set_number(self, number_1):
+#         self.number = number_1  
+    
+# class ProductionWorker(Employee):
+#     def __init__(self, name, number, shift_number = 0, hourly_pay_rate = 0):
+#         Employee.__init__(self, name, number)
+#         self.shift_number = shift_number
+#         self.hourly_pay_rate = hourly_pay_rate
+
+#     def get_hourly_pay_rate(self):
+#         return self.hourly_pay_rate
+#     def set_hourly_pay_rate(self, salary):
+#         self.hourly_pay_rate = salary 
+   
+#     def get_shift_number(self):
+#         if self.shift_number == 1:
+#             return 'Day shift'
+#         elif self.shift_number == 2:
+#             return 'Night shift'
+#         else:
+#             return 'Invalid shift number, please input 1 or 2'
+#     def set_shift_number(self, shift):
+#             self.shift_number = shift
+
+# name = input("Enter employee name: ")
+# number = input("Enter employee number: ")
+# shift_number = int(input("Enter shift number (1 for day, 2 for night): "))
+# hourly_pay_rate = float(input("Enter hourly pay rate: "))
+
+# employee = ProductionWorker(name, number, shift_number, hourly_pay_rate)
+
+# print("Name:", employee.get_name())
+# print("Employee Number:", employee.get_number())
+# print("Shift:", employee.get_shift_number())
+# print("Hourly Pay Rate:", employee.get_hourly_pay_rate())
+"""
+
+"""
+# class Beverage:
+#     def __init__(self, bev_name):
+#         self.__bev_name = bev_name
+
+# class Cola(Beverage):
+#     def __init__(self):
+#         super().__init__('cola')
+
+# coka = Cola()
+"""
+
+"""
+# def rais(a, b):
+#     if b == 0:
+#         return 1
+#     else:
+#         return a * rais(a, b - 1)
+
+# print(rais(5, 2))
+"""
+
+"""
+# def unique_combination(string):
+
+#     def comb(beg, last):
+#         if not last:
+#             needed_list.append(beg)
+#             return
+#         for i in range(len(last)):
+#             comb(beg + last[i], last[:i] + last[i+1:])
+
+#     needed_list = []
+#     comb('', string)
+#     needed_list.sort()  
+#     return needed_list
+
+# input_string = input("Enter string: ")
+# print(unique_combination(input_string))
+"""
+
+"""
