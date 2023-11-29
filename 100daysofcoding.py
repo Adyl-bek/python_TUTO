@@ -216,3 +216,4 @@ while '_' in display:
         print(stages[lives])
 else: 
     print("You've won")
+    
