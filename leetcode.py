@@ -235,33 +235,50 @@
 #     sell_day += 1
 # print(profit + profit_2)
 
-nums = [2,1,1,0,0]
-if(len(nums) == 1):
-    print('true')
-elif(len(nums) == 2 and nums[1] == 0):
-    print('true')
-elif(len(nums) == 2 and nums[1] < 2):
-    print('false')
-elif(len(nums) - 1 <= nums[1] + 1 and nums[0] != 0):
-    print('true')
-else:
-    for i in range(nums[1] + 1, len(nums) - 1):
-        if(len(nums) - 1 - (nums[1] + 1) <= i+nums[i] and nums[i] != 0 and nums[len(nums) - 1] != 0):
-            print('true')
-            break
-        if(nums[len(nums) - 1 - nums[1]] == 0 and nums[i] != 0):
-            print('false')
-            break
-        elif(nums[i] == 0 and nums[1] != 0):
-            print('false')
-            break
-        elif(len(nums) != 2 and nums[i] != 0 and nums[1] == 0):
-            print('false')
-        elif(len(nums) != 2 and nums[1] == 0 and nums[i] == 0):
-            print('true')
+# nums = [2,1,1,0,0]
+# if(len(nums) == 1):
+#     print('true')
+# elif(len(nums) == 2 and nums[1] == 0):
+#     print('true')
+# elif(len(nums) == 2 and nums[1] < 2):
+#     print('false')
+# elif(len(nums) - 1 <= nums[1] + 1 and nums[0] != 0):
+#     print('true')
+# else:
+#     for i in range(nums[1] + 1, len(nums) - 1):
+#         if(len(nums) - 1 - (nums[1] + 1) <= i+nums[i] and nums[i] != 0 and nums[len(nums) - 1] != 0):
+#             print('true')
+#             break
+#         if(nums[len(nums) - 1 - nums[1]] == 0 and nums[i] != 0):
+#             print('false')
+#             break
+#         elif(nums[i] == 0 and nums[1] != 0):
+#             print('false')
+#             break
+#         elif(len(nums) != 2 and nums[i] != 0 and nums[1] == 0):
+#             print('false')
+#         elif(len(nums) != 2 and nums[1] == 0 and nums[i] == 0):
+#             print('true')
         
-
-
+"""
+"""
+# import random
+# myset = set()
+# myset.add(1)
+# item = 1
+# for i in myset:
+#     if item == i:
+#         print('true')
+# myset.add(2)
+# print(random.choice(list(myset)))
+"""
+"""
+nums = [1,2,3,4]
+new_nums = []
+res = 0
+for i in range(len(nums)):
+    for j in range(len(nums)):
+    
 
 
 
