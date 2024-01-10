@@ -181,39 +181,42 @@
 """
 
 """     
-import random
-from hangman_words import word_list 
-from hangman_art import stages
-from hangman_art import logo
-print(logo)
-lives = 6
-chosen_word = random.choice(word_list)
-word_length = len(chosen_word)
-print(f'Pssst, the solution is {chosen_word}.')
-display = []
-for _ in range(word_length):
-    display += "_"
-while '_' in display:
-    if lives == 0:
-        print("You've lost.")
-        print(f"{' '.join(display)}")
-        print(stages[lives])
-        break
-    else:
-        guess = input("Guess a letter: ").lower()
-        if guess in display:
-                print(f"You've already guessed {guess}")
-                pass
-        for position in range(word_length):
-            letter = chosen_word[position]
-            if letter == guess:
-                display[position] = letter
-            elif guess not in chosen_word:
-                print(f"You guessed {guess}. It's not in the word. You lose a life.")
-                lives -= 1
-                break
-        print(f"{' '.join(display)}")
-        print(stages[lives])
-else: 
-    print("You've won")
+# import random
+# from hangman_words import word_list 
+# from hangman_art import stages
+# from hangman_art import logo
+# print(logo)
+# lives = 6
+# chosen_word = random.choice(word_list)
+# word_length = len(chosen_word)
+# print(f'Pssst, the solution is {chosen_word}.')
+# display = []
+# for _ in range(word_length):
+#     display += "_"
+# while '_' in display:
+#     if lives == 0:
+#         print("You've lost.")
+#         print(f"{' '.join(display)}")
+#         print(stages[lives])
+#         break
+#     else:
+#         guess = input("Guess a letter: ").lower()
+#         if guess in display:
+#                 print(f"You've already guessed {guess}")
+#                 pass
+#         for position in range(word_length):
+#             letter = chosen_word[position]
+#             if letter == guess:
+#                 display[position] = letter
+#             elif guess not in chosen_word:
+#                 print(f"You guessed {guess}. It's not in the word. You lose a life.")
+#                 lives -= 1
+#                 break
+#         print(f"{' '.join(display)}")
+#         print(stages[lives])
+# else: 
+#     print("You've won")
+"""
+
+"""
     
